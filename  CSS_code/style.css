@@ -3,3 +3,9 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
 }
+
+.wallpaper {
+    width: 435px;
+    height: 250px;
+    border-radius: 16px;
+}
