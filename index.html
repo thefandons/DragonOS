@@ -8,20 +8,23 @@
     <body>
         <div class="content">
             <h1>Welcome to my very own OS, DragonOS!</h1>
-            <h2>This will be designed around the famous anime, Dragon Ball.</h2>
-            <h3>It might look a little like this:</h3>
-            <img id="wallpaper" src="resources/DragonOS_example.png" alt="A cool little example (you wish you could see it)">
-            <h2>Some facts about me:</h2>
-            <ul>
-                <li><h4>-I am a 15 year old boy-</h4></li>
-                <li><h4>-I like to play video games and basketball-</h4></li>
-                <li><h4>-I am a big fan of Dragon Ball-</h4></li>
-                <li><h4>-I play the violin and love to learn more about coding-</h4></li>
-                <li><h4>-I am currently working on developing my portfolio and other smaller projects-</h4></li>
-                <li><h4>-Making this is frying my brain-</h4></li>
-            </ul>
-            <p>“I am the hope of the universe! Ally to good! Nightmare to you!” - Son Goku, the Legendary Super Saiyan</p>
-            <p>“I am the Prince of all Saiyans!” - Vegeta, the Prince of all Saiyans</p>
+            <h2>This is designed around the famous anime, Dragon Ball.</h2>
+            <p>Goku solos fiction, argue with a brick wall</p>
         </div>
+        <div class="topbar">
+            <img id="dragonball" src="./resources/4-star Dragon Ball.png">
+            <p id="time">Monday, August 24, 2026 11:35 pm</p>
+        </div>
+        <script>
+            var currentTime = new Date().toLocaleString();
+            var timeText = document.querySelector("#time");
+            timeText.innerHTML = currentTime
+            function updateTime() {
+                var currentTime = new Date().toLocaleString();
+                var timeText = document.querySelector("#time");
+                timeText.innerHTML = currentTime;
+            }
+            setInterval(updateTime, 1000);
+        </script>
     </body>
 </html>
